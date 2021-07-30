@@ -20,6 +20,9 @@ function validate(num) {
   }
 }
 
+
+// sveiki! hi!
+
 console.log(validate(6));
 console.log(validate(10.5));
 console.log(validate(101));
