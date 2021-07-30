@@ -11,6 +11,12 @@ const books = [
   }
 ];
 
-const getTheTitles = () => {};
+const getTheTitles = (arr) => {
+  var Titles= [];
+  for (let i=0; i< arr.length; i++) {
+      Titles.push(arr[i].title);
+  }
+  return Titles
+};
 
 console.log(getTheTitles(books)); // Expected output: ['4 hour work week', 'Tools of Titans']
