@@ -35,3 +35,12 @@ const writers = [
     alive: true
   }
 ];
+
+var LiveWriters= [];
+for (let i=0; i< writers.length; i++) {
+  if (writers[i].alive === true) {
+    LiveWriters.push(writers[i]);
+  }
+}
+console.log("Hi, my name is "+LiveWriters[0].firstName+" "+LiveWriters[0].lastName+". I am "+LiveWriters[0].age+" years old, and work as a "+LiveWriters[0].occupation+".");
+console.log("Hi, my name is "+LiveWriters[1].firstName+" "+LiveWriters[1].lastName+". I am "+LiveWriters[1].age+" years old, and work as a "+LiveWriters[1].occupation+".");
