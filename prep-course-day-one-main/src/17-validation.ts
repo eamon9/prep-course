@@ -12,16 +12,16 @@ const excludedNums = [6, 14, 91, 111];
 
 // You are allowed to edit only this function
 function validate(num) {
-  if ((num !== excludedNums[0]&& num !== excludedNums[1] && num !== excludedNums[2] && num !== excludedNums[3]) && (num % 1 === 0) && (Math.floor(num) === num)) {
-    return true
+  var CleanNum = true;
+  for (var i=0; i< excludedNums.length; i++) {
+    var ExNum= excludedNums[i];
+    if (ExNum === num || Math.floor(num) !== num || num % 1 !== 0) {
+      CleanNum= false;
+      break;
+    }
   }
-  else {
-    return false
-  }
+  return CleanNum;
 }
-
-
-// sveiki! hi!
 
 console.log(validate(6));
 console.log(validate(10.5));
