@@ -1,14 +1,25 @@
 export {};
 
-function add() {}
+function add(num1, num2) {
+  return num1+ num2;
+}
 
-function subtract() {}
+function subtract(num1, num2) {
+  return num1- num2;
+}
 
-function sum() {}
+function sum([num1, num2, num3]) {
+  return num1+ num2+ num3;
+}
 
-function multiply() {}
+function multiply([num1, num2, num3]) {
+  return num1* num2* num3;
+}
 
-function power() {}
+function power(num1, num2) {
+  let power= Math.pow(num1, num2);
+  return power
+}
 
 console.log(add(1, 2)); // Expected output: 3
 console.log(subtract(1, 2)); // Expected output: -1
