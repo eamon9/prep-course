@@ -8,7 +8,11 @@ export {};
  */
 
 // You are allowed to edit only this function
-function remove(arr, valueToRemove) {}
+function remove(arr, valueToRemove) {
+  var indexRemoved = arr.indexOf(valueToRemove);
+  arr.splice(indexRemoved, 1);
+  return arr;
+}
 
 const numbers = [1, 2, 3];
 const names = ["John", "Alice", "Ellen"];
