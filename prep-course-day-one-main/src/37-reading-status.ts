@@ -18,7 +18,22 @@ const library = [
   }
 ];
 
-const showStatus = () => {};
+function addTicks (place: string) {
+  return `'`+place+`'`;
+}
+
+const showStatus = (location) => {
+  let titleCot;
+  for (let i = 0; i < location.length; i++) {
+    titleCot= location[i].title;
+    if (location[i].isRead) {
+      console.log("Already read "+ addTicks(titleCot)+ " by "+ location[i].author+".");
+    }
+    else {
+      console.log("You still need to read "+addTicks(titleCot)+ " by "+ location[i].author+".");
+    }
+  }
+};
 
 showStatus(library);
 
