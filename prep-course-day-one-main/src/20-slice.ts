@@ -4,7 +4,7 @@ export {};
  * Write function first5 which returns first five elements from the array
  */
 function first5(arr) {
-  var num= arr.slice(0, 5);
+  let num= arr.slice(0, 5);
   return num;
 }
 

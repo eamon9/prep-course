@@ -9,7 +9,7 @@ export {};
 
 // You are allowed to edit only this function
 function remove(arr, valueToRemove) {
-  var indexRemoved = arr.indexOf(valueToRemove);
+  let indexRemoved = arr.indexOf(valueToRemove);
   arr.splice(indexRemoved, 1);
   return arr;
 }

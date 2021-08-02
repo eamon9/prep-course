@@ -7,11 +7,11 @@ export {};
  */
 
 const sumAll = function(a, b) {
-  var arr= [];
+  let arr= [];
   while(a <= b) {
     arr.push(a++);
   }
-  var sum = 0;
+  let sum = 0;
   for(let i=0; i<arr.length; i++) {
     sum += arr[i];
   }

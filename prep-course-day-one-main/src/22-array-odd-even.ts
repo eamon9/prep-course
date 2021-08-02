@@ -1,8 +1,8 @@
 export {};
 
 function goThroughNumbers(start, end) {
-    var arr= [];
-    for (var i=start; i<= end;  i++) {
+    let arr= [];
+    for (let i=start; i<= end;  i++) {
         arr= arr+i;
         isEven(i)
     }
