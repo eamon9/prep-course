@@ -14,10 +14,11 @@
  */
 
 function palindrome(str: string) {
-  let string= str.split('');
-  let reverseString= string.reverse();
-  let FinReverseString= reverseString.join('')
-  if (str === FinReverseString) {
+  let RevString= str
+  .split('')
+  .reverse()
+  .join('');
+  if (str === RevString) {
     return true
   } else {
     return false
