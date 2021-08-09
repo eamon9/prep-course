@@ -9,6 +9,20 @@
  * vowels('Hello there!') === 4
  */
 
-function vowels(s: string) {}
+function vowels(s: string) {
+  let output= [];
+  let vowels= ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  let string= s.split("");
+  for (let i = 0; i < string.length; i++) {
+    for (let v = 0; v < vowels.length; v++) {
+      if (string[i] === vowels[v]) {
+        output.push(vowels[v])
+      }
+      
+    }
+    
+  }
+  return output.length
+}
 
 export { vowels };
