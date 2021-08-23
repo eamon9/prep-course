@@ -12,10 +12,16 @@
  * q.remove(); // returns 1
  */
 
-class Queue {
-  add(n: number) {}
-
-  remove() {}
+ class Queue {
+   constructor() {
+     this.data = [];
+   }
+  add(n: number) {
+    this.data.unshift(n)
+  }
+  remove() {
+    return this.data.pop()
+  }
 }
 
 export { Queue };
